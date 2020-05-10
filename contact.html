@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/main.css">
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar__logo" href="index.html">
+            Alexander Chlon
+        </a>
+
+        <div class="navbar__links">
+            <a class="navbar__link" href="index.html">
+                Home
+            </a>
+            <a class="navbar__link" href="about.html">
+                About
+            </a>
+            <a class="navbar__link" href="#">
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <main class="main">
+
+        <section class="main__content">
+
+            <div class="contact__form">
+                <input type="email" id="email" placeholder="Enter email here..." class="contact__email"
+                    onclick="removeClass(this)">
+                <textarea name="message" placeholder="Enter your message here..." id="message" cols="30" rows="10" class="contact__message" onclick="removeClass(this)"></textarea>
+                <button class="btn" id="send-btn" onclick="submitForm()">Submit</button>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
